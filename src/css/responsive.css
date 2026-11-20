@@ -1,0 +1,173 @@
+/* =========================================
+   FACEFX STUDIO — RESPONSIVE DESIGN
+========================================= */
+
+/* Smaller laptops */
+
+@media (max-width: 1200px) {
+    .studio-layout {
+        grid-template-columns: 175px minmax(0, 1fr);
+    }
+
+    .right-panel {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 20px;
+    }
+
+    .panel-title,
+    .panel-divider,
+    .privacy-card {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Tablets */
+
+@media (max-width: 850px) {
+    .studio-layout {
+        grid-template-columns: 1fr;
+        padding: 25px 4%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .right-panel {
+        grid-column: 1;
+    }
+
+    .camera-stage {
+        height: 440px;
+    }
+
+    .filter-gallery {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .topbar {
+        height: 65px;
+        padding: 0 16px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .brand-icon {
+        width: 33px;
+        height: 33px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .status-text {
+        display: none;
+    }
+
+    .avatar-button {
+        margin-left: 5px;
+    }
+
+    .studio-layout {
+        padding: 25px 15px;
+        gap: 25px;
+    }
+
+    .page-heading {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .page-heading h1 {
+        font-size: 29px;
+    }
+
+    .page-heading p {
+        font-size: 11px;
+    }
+
+    .quality-badge {
+        padding: 8px;
+        font-size: 8px;
+    }
+
+    .camera-stage {
+        height: 390px;
+        border-radius: 16px;
+    }
+
+    .camera-placeholder h2 {
+        font-size: 17px;
+    }
+
+    .camera-placeholder p {
+        font-size: 11px;
+    }
+
+    .camera-controls {
+        gap: 20px;
+    }
+
+    .capture-button {
+        width: 53px;
+        height: 53px;
+    }
+
+    .capture-button span {
+        width: 36px;
+        height: 36px;
+    }
+
+    .filter-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .right-panel {
+        display: block;
+        padding: 17px;
+    }
+
+    .footer {
+        padding: 18px 15px;
+        font-size: 8px;
+        gap: 10px;
+    }
+}
+
+/* Very small screens */
+
+@media (max-width: 360px) {
+    .camera-stage {
+        height: 330px;
+    }
+
+    .camera-controls {
+        gap: 12px;
+    }
+
+    .secondary-button {
+        padding: 9px 11px;
+    }
+
+    .filter-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
